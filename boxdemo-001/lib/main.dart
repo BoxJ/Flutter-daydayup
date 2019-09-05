@@ -39,11 +39,11 @@ class BoxHome extends StatelessWidget {
   Widget _boxCellForRow(BuildContext context, int index) {
     return Container(
       color: Colors.white,
-      height: 88.0,
+//      height: 88.0,
       margin: EdgeInsets.all(6.0),
       child: Row(
         children: <Widget>[
-          Image.network(boxArr[index].avatar),
+          Image.network(boxArr[index].avatar,width: 60.0,height: 60.0),
           SizedBox(width: 10),
           Text(boxArr[index].name)
         ],
