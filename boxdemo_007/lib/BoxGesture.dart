@@ -93,7 +93,7 @@ class _BoxDownRotationViewState extends State<BoxDownRotationView> with TickerPr
   double _offsetX = 0.0;
   double _tmpX = 0.0;
 
-  double _tmpY = 0.0;
+  double _tmpY = 200.0;
 
   Offset _tmpOffset = Offset.zero;
 
@@ -135,8 +135,8 @@ class _BoxDownRotationViewState extends State<BoxDownRotationView> with TickerPr
           if (!_animationController.isAnimating) {
             _tmpOffset = details.globalPosition;
             _tmpX = _offsetX;
-            _tmpY=_tmpOffset.dy;
-            debugPrint('offsetY:$_tmpY');
+//            _tmpY=_tmpOffset.dy;
+//            debugPrint('offsetY:$_tmpY');
           }
         },
         onHorizontalDragUpdate: (details) {
